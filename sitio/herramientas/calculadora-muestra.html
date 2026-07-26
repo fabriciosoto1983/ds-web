@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="es-EC">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calculadora de Tamaño de Muestra para Tesis | Gratis</title>
+<meta name="description" content="Calcula el tamaño de muestra de tu tesis: población finita o infinita, confianza, margen de error y no respuesta. Con la redacción metodológica lista. Gratis.">
+<meta name="theme-color" content="#071f38">
+<link rel="canonical" href="https://www.dssolucionesacademicas.net/herramientas/calculadora-muestra">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="author" content="Diego Fabricio Soto Roa">
+<meta name="geo.region" content="EC-L">
+<meta name="geo.placename" content="Loja, Ecuador">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_EC">
+<meta property="og:site_name" content="DS Soluciones Academicas">
+<meta property="og:url" content="https://www.dssolucionesacademicas.net/herramientas/calculadora-muestra">
+<meta property="og:title" content="Calculadora de Tamano de Muestra para Tesis | DS Soluciones Academicas">
+<meta property="og:description" content="Calcula tu muestra y obten la redaccion metodologica lista para tu tesis. Gratis, sin registro.">
+<meta property="og:image" content="https://www.dssolucionesacademicas.net/img/og-ds.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Calculadora de Tamano de Muestra para Tesis">
+<meta name="twitter:description" content="Calcula tu muestra y obten la redaccion metodologica lista para tu tesis.">
+<meta name="twitter:image" content="https://www.dssolucionesacademicas.net/img/og-ds.jpg">
+<link rel="preload" href="../fonts/Bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/PublicSans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="../img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@graph":[
+  {
+   "@type":"WebApplication",
+   "@id":"https://www.dssolucionesacademicas.net/herramientas/calculadora-muestra#app",
+   "name":"Calculadora de tamano de muestra",
+   "url":"https://www.dssolucionesacademicas.net/herramientas/calculadora-muestra",
+   "applicationCategory":"EducationalApplication",
+   "operatingSystem":"Any",
+   "inLanguage":"es-EC",
+   "isAccessibleForFree":true,
+   "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},
+   "description":"Herramienta gratuita para estimar el tamano de muestra necesario para estimar una proporcion en una poblacion finita o muy grande, con ajuste por efecto de diseno y por no respuesta. Entrega la redaccion metodologica editable.",
+   "featureList":["Poblacion finita e infinita","Nivel de confianza 90, 95 y 99 por ciento","Margen de error configurable","Ajuste por efecto de diseno","Ajuste por no respuesta","Redaccion metodologica editable","Ficha tecnica copiable"],
+   "author":{"@id":"https://www.dssolucionesacademicas.net/#diego"},
+   "publisher":{"@id":"https://www.dssolucionesacademicas.net/#organizacion"}
+  },
+  {
+   "@type":"Person",
+   "@id":"https://www.dssolucionesacademicas.net/#diego",
+   "name":"Diego Fabricio Soto Roa",
+   "honorificPrefix":"Lic.",
+   "jobTitle":"Docente investigador y asesor metodologico",
+   "knowsAbout":["Metodologia de la investigacion","Estadistica aplicada","Muestreo","SPSS","Normas APA"],
+   "address":{"@type":"PostalAddress","addressLocality":"Loja","addressCountry":"EC"}
+  },
+  {
+   "@type":"ProfessionalService",
+   "@id":"https://www.dssolucionesacademicas.net/#organizacion",
+   "name":"DS Soluciones Academicas",
+   "url":"https://www.dssolucionesacademicas.net/",
+   "telephone":"+593989074861",
+   "address":{"@type":"PostalAddress","addressLocality":"Loja","addressRegion":"Loja","addressCountry":"EC"}
+  },
+  {
+   "@type":"BreadcrumbList",
+   "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.dssolucionesacademicas.net/"},
+    {"@type":"ListItem","position":2,"name":"Herramientas","item":"https://www.dssolucionesacademicas.net/herramientas/calculadora-muestra"},
+    {"@type":"ListItem","position":3,"name":"Calculadora de tamano de muestra"}]
+  },
+  {
+   "@type":"FAQPage",
+   "mainEntity":[
+    {"@type":"Question","name":"Que formula se usa para calcular el tamano de muestra de una tesis?",
+     "acceptedAnswer":{"@type":"Answer","text":"Para estimar una proporcion se parte de n0 = Z al cuadrado por p por (1 menos p) dividido para el margen de error al cuadrado. Cuando la poblacion es finita y conocida se aplica la correccion por poblacion finita: n = n0 dividido para 1 mas (n0 menos 1) sobre N."}},
+    {"@type":"Question","name":"Que margen de error debo usar en una tesis?",
+     "acceptedAnswer":{"@type":"Answer","text":"En investigacion educativa y de ciencias sociales lo habitual es un margen de error del 5 por ciento con un nivel de confianza del 95 por ciento. Un margen menor exige una muestra mayor."}},
+    {"@type":"Question","name":"Que hago si no conozco el tamano de mi poblacion?",
+     "acceptedAnswer":{"@type":"Answer","text":"Se usa la formula para poblaciones infinitas o muy grandes, que es el escenario mas conservador y nunca deja la muestra corta."}},
+    {"@type":"Question","name":"Por que se usa p igual a 0,5 cuando no hay estudios previos?",
+     "acceptedAnswer":{"@type":"Answer","text":"Porque p igual a 0,5 maximiza la varianza p por (1 menos p) y produce el tamano de muestra mas exigente. Si existe un estudio previo con una proporcion conocida conviene usar ese valor y citarlo."}},
+    {"@type":"Question","name":"Esta calculadora sirve para muestreo no probabilistico?",
+     "acceptedAnswer":{"@type":"Answer","text":"No directamente. La formula corresponde al muestreo probabilistico. Si el diseno usa muestreo por conveniencia o intencional, el numero sirve como referencia de tamano pero la justificacion debe apoyarse en el diseno del estudio y en la accesibilidad a los participantes."}},
+    {"@type":"Question","name":"Sirve para comparar grupos o calcular correlaciones?",
+     "acceptedAnswer":{"@type":"Answer","text":"No. Para comparar medias, proporciones entre grupos o estimar correlaciones se requiere un calculo basado en potencia estadistica y en la prueba especifica que se va a aplicar, no en la estimacion de una proporcion."}}]
+  }
+ ]
+}
+</script>
+<style>
+@font-face{font-family:Bricolage;src:url('../fonts/Bricolage.woff2') format('woff2');font-weight:200 800;font-display:swap}
+@font-face{font-family:PublicSans;src:url('../fonts/PublicSans.woff2') format('woff2');font-weight:100 900;font-display:swap}
+@font-face{font-family:PlexMono;src:url('../fonts/PlexMono.woff2') format('woff2');font-weight:500 700;font-display:swap}
+:root{--navy:#071f38;--navy2:#041525;--blue:#155bd7;--cyan:#16b5a6;--yellow:#f4ca4b;--ink:#10263c;--muted:#5d6d80;--paper:#f3f6fa;--white:#fff;--line:#cbd7e4}
+*,*:before,*:after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:95px;-webkit-text-size-adjust:100%}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.6 PublicSans,Arial,sans-serif}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.shell{width:min(1190px,calc(100% - 48px));margin:auto}
+@media(max-width:640px){.shell{width:calc(100% - 28px)}}
+.skip{position:fixed;z-index:200;top:8px;left:8px;padding:10px;background:#fff;border:2px solid var(--blue);transform:translateY(-150%)}
+.skip:focus{transform:none}
+
+/* Encabezado igual al del sitio */
+.utility{background:var(--navy);color:#fff}
+.utility .shell{min-height:34px;display:flex;justify-content:space-between;align-items:center;gap:20px;font:700 11px PlexMono,monospace;letter-spacing:.08em}
+@media(max-width:860px){.utility .shell{justify-content:center}.utility span:last-child{display:none}}
+header{position:sticky;z-index:100;top:0;border-bottom:1px solid #071f3822;background:#f3f6faf2;backdrop-filter:blur(18px)}
+.nav{min-height:76px;display:flex;align-items:center;gap:28px}
+.brand{display:flex;align-items:center;gap:11px;min-width:228px}
+.brand img{width:46px;height:46px;object-fit:contain;border-radius:50%}
+.brand span{display:flex;flex-direction:column}
+.brand strong{font:750 15px Bricolage,sans-serif;color:var(--navy)}
+.brand small{margin-top:3px;color:var(--blue);font:700 8px PlexMono,monospace;letter-spacing:.17em;text-transform:uppercase}
+.links{display:flex;justify-content:center;gap:27px;margin:auto}
+.links a{font-size:12px;font-weight:750;color:#43566b}
+.links a:hover,.links a[aria-current]{color:var(--blue)}
+.nav-cta{display:flex;align-items:center;gap:14px;padding:13px 17px;background:var(--navy);color:#fff;font:850 11px PlexMono,monospace;letter-spacing:.1em;white-space:nowrap}
+.nav-cta:hover{background:var(--blue)}
+.menu{display:none;width:43px;height:43px;border:1px solid var(--line);background:#fff;cursor:pointer;flex-direction:column;justify-content:center;align-items:center;gap:5px}
+.menu i{width:18px;height:2px;background:var(--navy);display:block}
+@media(max-width:1260px){.links{gap:15px}.links a{font-size:12.5px}.brand{min-width:190px}.nav-cta{padding:13px 14px}}@media(max-width:960px){
+ .nav{min-height:70px}.brand{min-width:0}
+ .menu{display:flex}
+ .links{display:none}
+ .links.open{position:absolute;top:70px;left:0;right:0;display:flex;flex-direction:column;gap:0;padding:12px 25px 22px;background:#f3f6fa;border-bottom:1px solid var(--line);box-shadow:0 18px 32px #071f3822}
+ .links.open a{padding:13px 0;border-bottom:1px solid var(--line);font-size:14px}
+ .nav-cta{padding:11px 13px;font-size:10px;gap:8px}
+}
+@media(max-width:520px){.brand strong{font-size:14px}.brand small{font-size:8px}.brand img{width:40px;height:40px}}
+
+/* Migas */
+.crumbs{padding:22px 0 0;font:600 12px PlexMono,monospace;color:var(--muted);letter-spacing:.06em}
+.crumbs a:hover{color:var(--blue)}
+
+/* Portada de la herramienta */
+.hero{padding:34px 0 30px}
+.tag{display:inline-flex;align-items:center;gap:9px;padding:7px 14px;border:1px solid var(--blue);color:var(--blue);font:700 10px PlexMono,monospace;letter-spacing:.16em;text-transform:uppercase;background:#fff}
+h1{margin:18px 0 0;font:800 clamp(30px,4.6vw,50px)/1.06 Bricolage,sans-serif;color:var(--navy);max-width:20ch;letter-spacing:-.02em}
+h1 em{font-style:normal;color:var(--blue)}
+.lead{margin:15px 0 0;max-width:62ch;color:var(--muted);font-size:17px}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
+.chips span{padding:8px 14px;background:#fff;border:1px solid var(--line);font:600 12px PublicSans,sans-serif;color:var(--ink)}
+
+/* Panel de cálculo */
+.panel{display:grid;grid-template-columns:1fr 1.08fr;background:#fff;border:1px solid var(--line);margin:30px 0 0}
+@media(max-width:900px){.panel{grid-template-columns:1fr}}
+.pane{padding:30px}
+.pane+.pane{border-left:1px solid var(--line)}
+@media(max-width:900px){.pane+.pane{border-left:none;border-top:1px solid var(--line)}}
+.pane h2{margin:0 0 20px;font:700 11px PlexMono,monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.field{margin-bottom:20px}
+.field label{display:block;font-weight:700;font-size:14px;margin-bottom:7px;color:var(--ink)}
+.field .hint{display:block;margin-top:6px;font-size:12.5px;color:var(--muted);font-weight:400}
+.field input[type=number]{width:100%;padding:12px 13px;border:1px solid var(--line);background:var(--paper);color:var(--ink);font:600 16px PlexMono,monospace}
+.field input[type=number]:focus-visible{outline:2px solid var(--blue);outline-offset:1px;border-color:var(--blue)}
+.seg{display:flex;gap:8px;flex-wrap:wrap}
+.seg button{flex:1;min-width:72px;padding:11px 9px;border:1px solid var(--line);background:var(--paper);color:var(--ink);font:600 13.5px PlexMono,monospace;cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--navy);color:#fff;border-color:var(--navy);font-weight:700}
+.seg button:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.hidden{display:none}
+.err{margin-top:6px;font-size:12.5px;color:#b3261e;font-weight:600}
+
+/* Resultado */
+.curve{background:var(--paper);border:1px solid var(--line);padding:12px 12px 4px;margin-bottom:20px}
+.curve-note{font:400 11.5px PlexMono,monospace;color:var(--muted);text-align:center;padding-bottom:8px}
+.result{display:flex;align-items:baseline;gap:15px;flex-wrap:wrap}
+.result .n{font:700 clamp(48px,7.4vw,68px)/1 PlexMono,monospace;color:var(--navy);background:linear-gradient(transparent 62%,var(--yellow) 62%,var(--yellow) 96%,transparent 96%);padding:0 7px}
+.result .lbl{font-size:14px;color:var(--muted);max-width:24ch}
+.detail{margin-top:18px;padding:14px 16px;background:var(--paper);border-left:3px solid var(--blue);font:500 13px/1.75 PlexMono,monospace;color:var(--ink)}
+.detail span{display:block}
+.warn{margin-top:14px;padding:12px 15px;background:#fff8e1;border:1px solid var(--yellow);font-size:13.5px;line-height:1.6}
+
+/* Redacción */
+.writing{margin:26px 0 0;background:var(--navy);color:#fff;padding:32px 30px}
+.writing h2{margin:0 0 7px;font:750 20px Bricolage,sans-serif}
+.writing .sub{margin:0 0 18px;font-size:13.5px;color:#b9c8d8;max-width:70ch}
+.writing-text{background:#fff;color:var(--ink);padding:19px 21px;font-size:15px;line-height:1.75}
+.sampling{margin-top:14px;padding:15px 18px;background:#0d2d4f;border-left:3px solid var(--cyan);font-size:13.6px;line-height:1.7;color:#dae6f2}
+.sampling strong{display:block;margin-bottom:5px;color:#fff;font:700 14.5px Bricolage,sans-serif}
+.actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:17px}
+.btn{padding:13px 20px;border:0;font:800 12px PlexMono,monospace;letter-spacing:.09em;cursor:pointer}
+.btn-y{background:var(--yellow);color:var(--navy)}
+.btn-w{background:#fff;color:var(--navy)}
+.btn-o{background:transparent;color:#fff;border:1px solid #ffffff55}
+.btn:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
+
+/* Secciones informativas */
+section.block{margin:44px 0 0}
+h2.sec{margin:0 0 10px;font:750 clamp(23px,3.2vw,32px)/1.15 Bricolage,sans-serif;color:var(--navy);letter-spacing:-.01em}
+p.sec-sub{margin:0 0 22px;color:var(--muted);max-width:66ch}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:900px){.cards{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--line);padding:22px}
+.card h3{margin:0 0 8px;font:750 16px Bricolage,sans-serif;color:var(--navy)}
+.card p{margin:0;font-size:14px;color:var(--muted);line-height:1.65}
+.card ul{margin:9px 0 0 17px;padding:0;font-size:14px;color:var(--muted)}
+.card li{margin-bottom:4px}
+
+/* Puente al servicio */
+.bridge{margin:26px 0 0;background:#fff;border:1px solid var(--line);border-top:4px solid var(--blue);padding:28px 30px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.bridge h2{margin:0;font:750 21px Bricolage,sans-serif;color:var(--navy);max-width:30ch}
+.bridge p{margin:8px 0 0;font-size:14.5px;color:var(--muted);max-width:56ch}
+.bridge a{padding:14px 22px;background:var(--navy);color:#fff;font:800 12px PlexMono,monospace;letter-spacing:.09em;white-space:nowrap}
+.bridge a:hover{background:var(--blue)}
+
+/* FAQ */
+details{background:#fff;border:1px solid var(--line);padding:16px 20px;margin-bottom:10px}
+details[open]{border-color:var(--blue)}
+summary{font-weight:700;font-size:15px;cursor:pointer;color:var(--navy)}
+details p{margin:11px 0 0;font-size:14.5px;color:var(--muted);line-height:1.7}
+details code{font:500 13px PlexMono,monospace;background:var(--paper);padding:2px 6px;color:var(--blue)}
+
+/* Fuentes */
+.sources{margin:22px 0 0;padding-left:19px;font-size:13px;color:var(--muted);line-height:1.8}
+.sources a{color:var(--blue);text-decoration:underline}
+
+/* Pie */
+footer{margin-top:60px;padding:60px 0 24px;background:var(--navy2);color:#fff}
+.footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:34px}
+@media(max-width:900px){.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.footer-grid{grid-template-columns:1fr}}
+.footer-intro p{margin:14px 0 0;font-size:14px;color:#9fb2c6;max-width:38ch}
+footer h3{margin:0 0 14px;font:700 10px PlexMono,monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--yellow)}
+footer a,footer p.li{display:block;margin-bottom:9px;font-size:14px;color:#c3d2e2}
+footer a:hover{color:#fff}
+.footer-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:40px;padding-top:20px;border-top:1px solid #ffffff1f;font-size:12.5px;color:#8fa3b8}
+.wa-fab{position:fixed;right:20px;bottom:20px;z-index:120;display:flex;align-items:center;gap:10px;padding:14px 20px;background:#25d366;color:#04331a;font:800 12px PlexMono,monospace;letter-spacing:.08em;box-shadow:0 10px 26px #071f3840}
+.wa-fab:focus-visible{outline:3px solid var(--navy);outline-offset:2px}
+@media(max-width:560px){.wa-fab{right:12px;bottom:12px;padding:12px 16px;font-size:11px}}
+@media print{header,.utility,.wa-fab,footer,.bridge,.actions,.crumbs{display:none!important}body{background:#fff}}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<div class="utility"><div class="shell"><span>Loja · Atención digital en todo Ecuador</span><span>Herramienta gratuita · Sin registro · Cálculo local</span></div></div>
+
+<header>
+  <div class="shell nav">
+    <a class="brand" href="../index.html" aria-label="DS Soluciones Académicas, inicio">
+      <img src="../img/logo-ds.png" alt="Logotipo de DS Soluciones Académicas" width="46" height="46">
+      <span><strong>DS Soluciones</strong><small>Académicas</small></span>
+    </a>
+    <nav class="links" id="navLinks" aria-label="Navegación principal">
+      <a href="../index.html#servicios">Servicios</a>
+      <a href="../index.html#proceso">Proceso</a>
+      <a href="../index.html#instituciones">Instituciones</a>
+      <a href="../index.html#nosotros">Nuestra marca</a>
+      <a href="../index.html#preguntas">Preguntas</a>
+      <a href="calculadora-muestra.html" aria-current="page">Herramientas</a>
+      <a href="/blog/">Blog</a><a href="/recursos/">Recursos</a>
+    </nav>
+    <a class="nav-cta" id="waNav" target="_blank" rel="noopener">Cotizar <span>↗</span></a>
+    <button class="menu" id="menu" type="button" aria-label="Abrir menú" aria-expanded="false"><i></i><i></i></button>
+  </div>
+</header>
+
+<main id="contenido">
+  <div class="shell">
+    <p class="crumbs"><a href="../index.html">Inicio</a> / Herramientas / Calculadora de muestra</p>
+  </div>
+
+  <section class="shell hero">
+    <span class="tag">Herramienta gratuita · N.º 01</span>
+    <h1>Calcula el tamaño de tu muestra y comprende <em>cómo justificarlo.</em></h1>
+    <p class="lead">Estimación de una proporción en población finita o muy grande, con ajuste por efecto de diseño y por no respuesta. Incluye la redacción metodológica editable para tu documento.</p>
+    <div class="chips">
+      <span>✓ Sin registro</span>
+      <span>✓ Cálculo local y privado</span>
+      <span>✓ Fórmula y supuestos visibles</span>
+      <span>✓ Resultado copiable</span>
+    </div>
+  </section>
+
+  <div class="shell">
+    <div class="panel">
+      <div class="pane">
+        <h2>1 · Define tu estudio</h2>
+
+        <div class="field">
+          <label id="lblPob">¿Conoces el tamaño de la población?</label>
+          <div class="seg" role="group" aria-labelledby="lblPob">
+            <button type="button" id="btnFin" aria-pressed="true">Sí, es finita</button>
+            <button type="button" id="btnInf" aria-pressed="false">No / es muy grande</button>
+          </div>
+        </div>
+
+        <div class="field" id="wrapN">
+          <label for="inN">Tamaño de la población (N)</label>
+          <input type="number" id="inN" value="500" min="2" step="1" inputmode="numeric">
+          <span class="hint">Ejemplo: los estudiantes de tu facultad o los docentes de tu distrito.</span>
+          <span class="err hidden" id="errN"></span>
+        </div>
+
+        <div class="field">
+          <label id="lblConf">Nivel de confianza</label>
+          <div class="seg" role="group" aria-labelledby="lblConf">
+            <button type="button" data-c="90" aria-pressed="false">90 %</button>
+            <button type="button" data-c="95" aria-pressed="true">95 %</button>
+            <button type="button" data-c="99" aria-pressed="false">99 %</button>
+          </div>
+          <span class="hint">El estándar en educación y ciencias sociales es 95 %.</span>
+        </div>
+
+        <div class="field">
+          <label for="inE">Margen de error (%)</label>
+          <input type="number" id="inE" value="5" min="0.5" max="20" step="0.5" inputmode="decimal">
+          <span class="hint">5 % es lo habitual. Menos error exige más muestra.</span>
+          <span class="err hidden" id="errE"></span>
+        </div>
+
+        <div class="field">
+          <label for="inP">Proporción esperada p (%)</label>
+          <input type="number" id="inP" value="50" min="1" max="99" step="1" inputmode="numeric">
+          <span class="hint">Si no hay estudios previos, deja 50 %: es el escenario más exigente.</span>
+          <span class="err hidden" id="errP"></span>
+        </div>
+
+        <div class="field">
+          <label for="inD">Efecto de diseño (DEFF) <span class="hint" style="display:inline;font-weight:400">opcional</span></label>
+          <input type="number" id="inD" value="1" min="1" max="5" step="0.1" inputmode="decimal">
+          <span class="hint">Deja 1 en muestreo aleatorio simple. Súbelo si usas conglomerados.</span>
+        </div>
+
+        <div class="field">
+          <label for="inNR">No respuesta esperada (%) <span class="hint" style="display:inline;font-weight:400">opcional</span></label>
+          <input type="number" id="inNR" value="0" min="0" max="60" step="1" inputmode="numeric">
+          <span class="hint">Si crees que un 10 % no responderá, escribe 10 y se ajusta.</span>
+        </div>
+      </div>
+
+      <div class="pane">
+        <h2>2 · Interpreta el resultado</h2>
+
+        <div class="curve">
+          <svg id="svgCurve" viewBox="0 0 420 150" width="100%" height="auto" role="img" aria-label="Curva normal con el área de confianza sombreada">
+            <path id="cArea" fill="#155bd7" opacity=".16"></path>
+            <path id="cLine" fill="none" stroke="#155bd7" stroke-width="2.4"></path>
+            <line id="lL" stroke="#071f38" stroke-width="1.4" stroke-dasharray="4 4" y1="20" y2="132"></line>
+            <line id="lR" stroke="#071f38" stroke-width="1.4" stroke-dasharray="4 4" y1="20" y2="132"></line>
+            <line x1="10" y1="132" x2="410" y2="132" stroke="#cbd7e4" stroke-width="1.4"></line>
+            <text id="tZ" x="210" y="15" text-anchor="middle" font-family="PlexMono,monospace" font-size="11.5" fill="#155bd7"></text>
+          </svg>
+          <div class="curve-note">El área sombreada es tu nivel de confianza: la zona donde esperas que caiga el parámetro real.</div>
+        </div>
+
+        <div class="result">
+          <span class="n" id="outN" aria-live="polite">218</span>
+          <span class="lbl" id="outLbl">participantes necesarios como mínimo</span>
+        </div>
+
+        <div class="detail" id="outDetail"></div>
+        <div class="warn hidden" id="outWarn"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="shell">
+    <div class="writing">
+      <h2>3 · Redacción metodológica editable</h2>
+      <p class="sub">Completa los textos entre corchetes y cita una fuente metodológica aceptada por tu institución. No la presentes sin adaptarla a tu diseño real.</p>
+      <div class="writing-text" id="outText"></div>
+      <div class="sampling">
+        <strong>¿Qué escribo en «técnica de muestreo»?</strong>
+        Si seleccionaste a los participantes al azar y todos tenían una posibilidad conocida de ser elegidos, tu muestreo es <em>probabilístico</em> (aleatorio simple, sistemático, estratificado o por conglomerados) y este cálculo lo respalda. Si los elegiste por disponibilidad, cercanía o criterio propio, es <em>no probabilístico</em> (por conveniencia, intencional, por cuotas o bola de nieve): en ese caso el número calculado sirve como referencia de tamaño, pero la justificación debe apoyarse en el diseño del estudio y en la accesibilidad a los participantes, no en esta fórmula.
+      </div>
+      <div class="actions">
+        <button class="btn btn-y" type="button" id="cpText">Copiar redacción</button>
+        <button class="btn btn-w" type="button" id="cpFicha">Copiar ficha técnica</button>
+        <button class="btn btn-o" type="button" onclick="window.print()">Imprimir / guardar PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="shell block">
+    <h2 class="sec">Antes de usar el resultado</h2>
+    <p class="sec-sub">Un número sin supuestos no se sostiene ante un tribunal. Esto es lo que esta herramienta hace y lo que no.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Qué calcula</h3>
+        <p>El tamaño necesario para estimar <strong>una proporción</strong> con determinada confianza y precisión. Parte de <code style="font:500 12.5px PlexMono,monospace">n₀ = Z² × p × (1−p) × DEFF / e²</code> y, si conoces N, aplica la corrección por población finita.</p>
+      </div>
+      <div class="card">
+        <h3>Qué no calcula</h3>
+        <ul>
+          <li>Comparación de medias o de grupos</li>
+          <li>Correlaciones o regresiones</li>
+          <li>Potencia estadística de una prueba</li>
+          <li>Diseños longitudinales o por etapas</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Supuestos que asumes</h3>
+        <ul>
+          <li>Muestreo probabilístico</li>
+          <li>Variable de interés dicotómica o proporción</li>
+          <li>Independencia entre observaciones</li>
+          <li>Marco muestral accesible y completo</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bridge">
+      <div>
+        <h2>¿Tu estudio compara grupos, medias o correlaciones?</h2>
+        <p>Entonces este cálculo no es el que corresponde: necesitas un tamaño basado en potencia estadística y en la prueba que vas a aplicar. Escríbeme y revisamos juntos cuál corresponde a tu diseño.</p>
+      </div>
+      <a id="waBridge" target="_blank" rel="noopener">Consultar mi caso ↗</a>
+    </div>
+
+    <ul class="sources">
+      <li>Referencia técnica de la fórmula para encuestas poblacionales: <a href="https://www.cdc.gov/epiinfo/user-guide/statcalc/samplesize.html" target="_blank" rel="noopener noreferrer">CDC, Epi Info — Population Survey</a>.</li>
+      <li>La herramienta realiza los cálculos en tu navegador. No se envía ni se almacena ningún dato.</li>
+    </ul>
+  </section>
+
+  <section class="shell block" id="preguntas">
+    <h2 class="sec">Preguntas frecuentes</h2>
+    <details>
+      <summary>¿Qué fórmula usa esta calculadora?</summary>
+      <p>La fórmula clásica para estimar una proporción: <code>n₀ = Z² · p · (1−p) · DEFF / e²</code>. Cuando la población es finita y conocida, se aplica la corrección por población finita: <code>n = n₀ / (1 + (n₀ − 1)/N)</code>. Es la misma que encuentras en los manuales de metodología de la investigación.</p>
+    </details>
+    <details>
+      <summary>¿Qué margen de error debo usar en mi tesis?</summary>
+      <p>En investigación educativa y de ciencias sociales lo habitual es un 5 % con un nivel de confianza del 95 %. Si tu comité pide más precisión, baja el margen a 3 % y verás cómo crece la muestra necesaria.</p>
+    </details>
+    <details>
+      <summary>¿Qué hago si no conozco el tamaño de mi población?</summary>
+      <p>Selecciona la opción de población desconocida o muy grande. La calculadora usará la fórmula para poblaciones infinitas, que es el caso más conservador: nunca te quedarás corto por usarla.</p>
+    </details>
+    <details>
+      <summary>¿Por qué se usa p = 50 % cuando no hay estudios previos?</summary>
+      <p>Porque con p = 0,5 la varianza <code>p·(1−p)</code> alcanza su valor máximo y la muestra resultante es la más exigente posible. Si existe un estudio previo con una proporción conocida, usa ese valor y cítalo en tu metodología.</p>
+    </details>
+    <details>
+      <summary>¿Qué es el efecto de diseño (DEFF)?</summary>
+      <p>Es un factor que corrige el tamaño cuando el muestreo no es aleatorio simple. En muestreo por conglomerados, los elementos de un mismo grupo se parecen entre sí y aportan menos información, por lo que hace falta una muestra mayor. Si usas muestreo aleatorio simple, déjalo en 1.</p>
+    </details>
+    <details>
+      <summary>¿Esta calculadora sirve para muestreo no probabilístico?</summary>
+      <p>No directamente. Esta fórmula corresponde al muestreo probabilístico. Si tu diseño usa muestreo por conveniencia o intencional, el tamaño se justifica por otros criterios: saturación, accesibilidad o el propio diseño del estudio. Si tienes dudas sobre cuál corresponde a tu tesis, escríbeme.</p>
+    </details>
+  </section>
+</main>
+
+<footer>
+  <div class="shell footer-grid">
+    <div class="footer-intro">
+      <a class="brand" href="../index.html">
+        <img loading="lazy" decoding="async" src="../img/logo-ds.png" alt="Logotipo de DS Soluciones Académicas" width="46" height="46">
+        <span><strong style="color:#fff">DS Soluciones</strong><small>Académicas</small></span>
+      </a>
+      <p>Servicios académicos y documentales para estudiantes, docentes e instituciones.</p>
+    </div>
+    <div>
+      <h3>Servicios</h3>
+      <a href="../index.html#servicios">Tesis y titulación</a>
+      <a href="../index.html#servicios">Maestrías</a>
+      <a href="../index.html#servicios">Pregrado y bachillerato</a>
+      <a href="../index.html#instituciones">Docentes e instituciones</a>
+    </div>
+    <div>
+      <h3>Herramientas</h3>
+      <a href="calculadora-muestra.html">Calculadora de muestra</a>
+      <a href="../index.html#proceso">Cómo trabajamos</a>
+      <a href="../index.html#preguntas">Preguntas frecuentes</a>
+      <a href="../index.html#nosotros">Nuestra identidad</a>
+      <a href="../index.html#cotizador">Preparar solicitud</a>
+      <a href="/blog/">Blog</a><a href="/recursos/">Recursos</a>
+    </div>
+    <div>
+      <h3>Atención</h3>
+      <p class="li">Loja, Ecuador</p>
+      <p class="li">Atención digital en todo Ecuador</p>
+      <a id="waFoot" target="_blank" rel="noopener">+593 98 907 4861</a>
+    </div>
+  </div>
+  <div class="shell footer-bottom">
+    <span>© <span id="yy">2026</span> DS Soluciones Académicas</span>
+    <span>Claridad · Confidencialidad · Responsabilidad</span>
+  </div>
+</footer>
+
+<a class="wa-fab" id="waFab" target="_blank" rel="noopener" aria-label="Cotizar por WhatsApp">WA <strong>Cotizar</strong></a>
+
+<script>
+(function(){
+  "use strict";
+  var PHONE="593989074861";
+  function wa(msg){return "https://wa.me/"+PHONE+"?text="+encodeURIComponent(msg);}
+  var m={
+    nav:"Hola Diego, vengo de la calculadora de muestra del sitio web y quiero cotizar un servicio.",
+    bridge:"Hola Diego, use la calculadora de muestra pero mi estudio compara grupos o correlaciones. Quiero saber que calculo corresponde a mi diseno.",
+    foot:"Hola Diego, vengo del sitio web de DS Soluciones Academicas."
+  };
+  var e=function(id){return document.getElementById(id);};
+  e("waNav").href=wa(m.nav); e("waFab").href=wa(m.nav);
+  e("waBridge").href=wa(m.bridge); e("waFoot").href=wa(m.foot);
+  e("yy").textContent=new Date().getFullYear();
+
+  // Menú móvil
+  var mb=e("menu"), lk=e("navLinks");
+  mb.addEventListener("click",function(){
+    var o=lk.classList.toggle("open");
+    mb.setAttribute("aria-expanded",o?"true":"false");
+  });
+
+  // ---- Calculadora ----
+  var Z={90:1.645,95:1.96,99:2.576};
+  var st={finite:true,conf:95};
+  var last={};
+  var fmt=new Intl.NumberFormat("es-EC");
+
+  function num(id,def,min,max){
+    var el=e(id), v=parseFloat(el.value);
+    if(isNaN(v)) return {v:def,err:null};
+    if(min!==undefined&&v<min) return {v:min,err:"El valor mínimo es "+min+"."};
+    if(max!==undefined&&v>max) return {v:max,err:"El valor máximo es "+max+"."};
+    return {v:v,err:null};
+  }
+  function showErr(id,msg){
+    var el=e(id); if(!el) return;
+    if(msg){el.textContent=msg;el.classList.remove("hidden");}
+    else{el.classList.add("hidden");}
+  }
+
+  function calc(){
+    var z=Z[st.conf];
+    var E=num("inE",5,0.5,20), P=num("inP",50,1,99), D=num("inD",1,1,5), NR=num("inNR",0,0,60);
+    showErr("errE",E.err); showErr("errP",P.err);
+    var eV=E.v/100, p=P.v/100, deff=D.v, nr=NR.v/100;
+
+    var n0=(z*z*p*(1-p)*deff)/(eV*eV);
+    var n=n0, N=null, corrected=null;
+    if(st.finite){
+      var NN=num("inN",500,2);
+      showErr("errN",NN.err);
+      N=Math.max(2,Math.round(NN.v));
+      n=n0/(1+(n0-1)/N);
+      corrected=n;
+      if(n>N) n=N;
+    }
+    var base=Math.ceil(n);
+    if(st.finite && base>N) base=N;
+    var invit=base;
+    if(nr>0&&nr<1) invit=Math.ceil(base/(1-nr));
+
+    last={z:z,conf:st.conf,e:eV,p:p,deff:deff,nr:nr,N:N,n0:n0,base:base,invit:invit,finite:st.finite};
+
+    e("outN").textContent=fmt.format(base);
+    e("outLbl").textContent = nr>0
+      ? "respuestas completas necesarias"
+      : "participantes necesarios como mínimo";
+
+    var d="<span>Z = "+z+"  ("+st.conf+" % de confianza)</span>";
+    d+="<span>n\u2080 = "+z+"\u00B2 \u00D7 "+p.toFixed(3)+" \u00D7 "+(1-p).toFixed(3)+(deff!==1?" \u00D7 "+deff:"")+" / "+eV.toFixed(4)+"\u00B2 = "+n0.toFixed(2)+"</span>";
+    if(st.finite) d+="<span>Corrección con N = "+fmt.format(N)+" \u2192 n = "+corrected.toFixed(2)+" \u2192 "+fmt.format(base)+"</span>";
+    else d+="<span>Población infinita \u2192 n = "+fmt.format(base)+"</span>";
+    if(nr>0) d+="<span>Invitaciones = "+base+" / (1 \u2212 "+nr.toFixed(2)+") = "+fmt.format(invit)+"</span>";
+    e("outDetail").innerHTML=d;
+
+    var w=e("outWarn");
+    if(st.finite && base>=N){
+      w.textContent="Con estos parámetros la muestra abarca toda la población. Considera un margen de error mayor o realiza un censo.";
+      w.classList.remove("hidden");
+    } else if(nr>0 && st.finite && invit>N){
+      w.textContent="Las invitaciones necesarias ("+fmt.format(invit)+") superan el tamaño de la población. Revisa la no respuesta esperada.";
+      w.classList.remove("hidden");
+    } else { w.classList.add("hidden"); }
+
+    drawCurve(z);
+    writeText();
+  }
+
+  function drawCurve(z){
+    var x0=10,x1=410,base=132,top=28,R=3.4;
+    function fx(v){return x0+((v+R)/(2*R))*(x1-x0);}
+    function fy(v){return base-Math.exp(-0.5*v*v)*(base-top);}
+    var line="",area="M "+fx(-z).toFixed(1)+" "+base+" ";
+    for(var v=-R;v<=R+0.001;v+=0.05){
+      line+=(v<=-R+0.05?"M":"L")+" "+fx(v).toFixed(1)+" "+fy(v).toFixed(1)+" ";
+    }
+    for(var w2=-z;w2<=z+0.001;w2+=0.05){
+      area+="L "+fx(w2).toFixed(1)+" "+fy(w2).toFixed(1)+" ";
+    }
+    area+="L "+fx(z).toFixed(1)+" "+base+" Z";
+    e("cLine").setAttribute("d",line);
+    e("cArea").setAttribute("d",area);
+    e("lL").setAttribute("x1",fx(-z)); e("lL").setAttribute("x2",fx(-z));
+    e("lR").setAttribute("x1",fx(z));  e("lR").setAttribute("x2",fx(z));
+    e("tZ").textContent="Z = \u00B1"+z+"  \u00B7  "+st.conf+" % de confianza";
+  }
+
+  function writeText(){
+    var u=last,t;
+    var ePct=(u.e*100).toFixed(1).replace(".",",");
+    if(u.finite){
+      t="El tamaño de la muestra se determinó mediante la fórmula para poblaciones finitas aplicada a la estimación de una proporción, considerando una población de "+fmt.format(u.N)+" [describe aquí tu población], un nivel de confianza del "+u.conf+" % (Z = "+u.z+"), un margen de error del "+ePct+" % y una proporción esperada del "+(u.p*100).toFixed(0)+" %";
+    } else {
+      t="El tamaño de la muestra se determinó mediante la fórmula para poblaciones infinitas aplicada a la estimación de una proporción, con un nivel de confianza del "+u.conf+" % (Z = "+u.z+"), un margen de error del "+ePct+" % y una proporción esperada del "+(u.p*100).toFixed(0)+" %";
+    }
+    if(u.deff!==1) t+=", incorporando un efecto de diseño de "+u.deff;
+    t+=". El cálculo arrojó un tamaño mínimo de "+fmt.format(u.base)+" participantes";
+    if(u.nr>0) t+=", por lo que se previó contactar a "+fmt.format(u.invit)+" personas para compensar una no respuesta esperada del "+(u.nr*100).toFixed(0)+" %";
+    t+=". La selección de los participantes se realizó mediante [indica y justifica aquí tu técnica de muestreo].";
+    e("outText").textContent=t;
+  }
+
+  function copy(txt,btn){
+    var done=function(){
+      var o=btn.textContent; btn.textContent="Copiado ✓";
+      setTimeout(function(){btn.textContent=o;},1700);
+    };
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(txt).then(done,function(){fallback(txt,done);});
+    } else { fallback(txt,done); }
+  }
+  function fallback(txt,cb){
+    var ta=document.createElement("textarea");
+    ta.value=txt; ta.setAttribute("readonly","");
+    ta.style.position="absolute"; ta.style.left="-9999px";
+    document.body.appendChild(ta); ta.select();
+    try{document.execCommand("copy");cb();}catch(x){}
+    document.body.removeChild(ta);
+  }
+
+  e("cpText").addEventListener("click",function(){copy(e("outText").textContent,this);});
+  e("cpFicha").addEventListener("click",function(){
+    var u=last;
+    var f="FICHA TÉCNICA DEL MUESTREO\n"
+      +"Población: "+(u.finite?fmt.format(u.N):"desconocida o muy grande")+"\n"
+      +"Nivel de confianza: "+u.conf+" % (Z = "+u.z+")\n"
+      +"Margen de error: "+(u.e*100).toFixed(1)+" %\n"
+      +"Proporción esperada: "+(u.p*100).toFixed(0)+" %\n"
+      +(u.deff!==1?"Efecto de diseño (DEFF): "+u.deff+"\n":"")
+      +(u.nr>0?"No respuesta esperada: "+(u.nr*100).toFixed(0)+" %\n":"")
+      +"Muestra mínima: "+fmt.format(u.base)+" respuestas completas\n"
+      +(u.nr>0?"Invitaciones a contactar: "+fmt.format(u.invit)+"\n":"")
+      +"\nCalculado con la herramienta gratuita de DS Soluciones Académicas (Loja, Ecuador)\n"
+      +"https://www.dssolucionesacademicas.net/herramientas/calculadora-muestra";
+    copy(f,this);
+  });
+
+  function setPob(fin){
+    st.finite=fin;
+    e("btnFin").setAttribute("aria-pressed",fin?"true":"false");
+    e("btnInf").setAttribute("aria-pressed",fin?"false":"true");
+    e("wrapN").classList.toggle("hidden",!fin);
+    calc();
+  }
+  e("btnFin").addEventListener("click",function(){setPob(true);});
+  e("btnInf").addEventListener("click",function(){setPob(false);});
+
+  Array.prototype.forEach.call(document.querySelectorAll("[data-c]"),function(b){
+    b.addEventListener("click",function(){
+      st.conf=parseInt(b.getAttribute("data-c"),10);
+      Array.prototype.forEach.call(document.querySelectorAll("[data-c]"),function(x){
+        x.setAttribute("aria-pressed",x===b?"true":"false");
+      });
+      calc();
+    });
+  });
+
+  ["inN","inE","inP","inD","inNR"].forEach(function(id){
+    e(id).addEventListener("input",calc);
+  });
+
+  calc();
+})();
+</script>
+</body>
+</html>

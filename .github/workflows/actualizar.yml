@@ -1,0 +1,33 @@
+# Regenera el sitio cada día leyendo la hoja de cálculo.
+# Diego publica escribiendo en Google Sheets: no tiene que tocar nada más.
+
+name: Actualizar el sitio desde la hoja
+
+on:
+  schedule:
+    # 11:00 UTC = 06:00 en Ecuador, de lunes a domingo
+    - cron: '0 11 * * *'
+  workflow_dispatch:        # botón para lanzarlo a mano cuando haga falta
+
+permissions:
+  contents: write
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Comprobar que la hoja responde
+        run: node build.mjs
+
+      - name: Avisar a Netlify si hubo cambios
+        run: |
+          git config user.name  "Actualizador automático"
+          git config user.email "actions@github.com"
+          git commit --allow-empty -m "Actualización diaria desde la hoja de cálculo"
+          git push
