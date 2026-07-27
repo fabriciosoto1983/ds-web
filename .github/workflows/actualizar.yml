@@ -1,5 +1,9 @@
-# Regenera el sitio cada día leyendo la hoja de cálculo.
+# Dispara un rebuild diario en Netlify para recoger los cambios de la hoja.
 # Diego publica escribiendo en Google Sheets: no tiene que tocar nada más.
+#
+# Netlify ya ejecuta "node build.mjs" en cada build (ver netlify.toml), así
+# que este workflow no toca el repositorio ni genera commits: solo le avisa
+# a Netlify que vuelva a construir el sitio.
 
 name: Actualizar el sitio desde la hoja
 
@@ -9,25 +13,11 @@ on:
     - cron: '0 11 * * *'
   workflow_dispatch:        # botón para lanzarlo a mano cuando haga falta
 
-permissions:
-  contents: write
-
 jobs:
   actualizar:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-
-      - name: Comprobar que la hoja responde
-        run: node build.mjs
-
-      - name: Avisar a Netlify si hubo cambios
-        run: |
-          git config user.name  "Actualizador automático"
-          git config user.email "actions@github.com"
-          git commit --allow-empty -m "Actualización diaria desde la hoja de cálculo"
-          git push
+      - name: Disparar el rebuild en Netlify
+        run: curl -fsS -X POST "$NETLIFY_BUILD_HOOK"
+        env:
+          NETLIFY_BUILD_HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}

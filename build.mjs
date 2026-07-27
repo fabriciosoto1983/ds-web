@@ -358,7 +358,7 @@ const NAV = [
   ['Servicios', '/#servicios'], ['Proceso', '/#proceso'],
   ['Instituciones', '/#instituciones'], ['Nuestra marca', '/#nosotros'],
   ['Preguntas', '/#preguntas'],
-  ['Herramientas', '/herramientas/calculadora-muestra.html'],
+  ['Herramientas', '/herramientas/calculadora-muestra'],
   ['Blog', '/blog/'], ['Recursos', '/recursos/']
 ];
 
@@ -409,6 +409,7 @@ function pagina({ titulo, descripcion, url, cuerpo, jsonld = [], migas = [], ogT
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 <link rel="preload" href="/fonts/Bricolage.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/PublicSans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/PlexMono.woff2" as="font" type="font/woff2" crossorigin>
 ${extraCabeza}${ld}
 <style>${CSS}</style>
 </head>
@@ -428,7 +429,7 @@ ${extraCabeza}${ld}
   <main id="contenido">
 ${cuerpo}
   </main>
-  <footer><div class="shell footer-grid"><div class="footer-intro"><a class="brand" href="/"><img loading="lazy" decoding="async" src="/img/logo-ds.png" alt="Logotipo de DS Soluciones Académicas" width="46" height="46"><span><strong style="color:#fff">DS Soluciones</strong><small>Académicas</small></span></a><p>Servicios académicos y documentales para estudiantes, docentes e instituciones.</p></div><div><h3>Servicios</h3><a href="/#servicios">Tesis y titulación</a><a href="/#servicios">Maestrías</a><a href="/#servicios">Pregrado y bachillerato</a><a href="/#instituciones">Docentes e instituciones</a></div><div><h3>Información</h3><a href="/#proceso">Cómo trabajamos</a><a href="/#nosotros">Nuestra identidad</a><a href="/#preguntas">Preguntas frecuentes</a><a href="/herramientas/calculadora-muestra.html">Calculadora de muestra</a><a href="/blog/">Blog</a><a href="/recursos/">Recursos docentes</a></div><div><h3>Atención</h3><p>Loja, Ecuador</p><p>Atención digital en todo Ecuador</p><a href="${WA('Hola Diego, vengo del sitio web y quiero cotizar un servicio.')}" target="_blank" rel="noopener">+593 98 907 4861</a></div></div><div class="shell footer-bottom"><span>© ${new Date().getFullYear()} DS Soluciones Académicas</span><span>Claridad · Confidencialidad · Responsabilidad</span></div></footer>
+  <footer><div class="shell footer-grid"><div class="footer-intro"><a class="brand" href="/"><img loading="lazy" decoding="async" src="/img/logo-ds.png" alt="Logotipo de DS Soluciones Académicas" width="46" height="46"><span><strong style="color:#fff">DS Soluciones</strong><small>Académicas</small></span></a><p>Servicios académicos y documentales para estudiantes, docentes e instituciones.</p><div class="social-links"><a href="https://www.facebook.com/profile.php?id=61562524749570" target="_blank" rel="me noopener" aria-label="Facebook de DS Soluciones Académicas"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14 13.5h2.5l.5-3H14V8.5c0-1 .3-1.5 1.5-1.5H17V4.1C16.7 4.1 15.7 4 14.6 4 12.3 4 10.8 5.4 10.8 8v2.5H8v3h2.8V21h3.2v-7.5Z"/></svg></a><a href="https://www.tiktok.com/@dssolucionesacademicas" target="_blank" rel="me noopener" aria-label="TikTok de DS Soluciones Académicas"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.6 5.8c-.9-.8-1.4-1.9-1.5-3.1h-3v13.6a2.6 2.6 0 1 1-1.8-2.5v-3.1a5.7 5.7 0 1 0 4.8 5.6V9.4a7.4 7.4 0 0 0 4.3 1.4V7.7a4.8 4.8 0 0 1-2.8-1.9Z"/></svg></a><a href="https://www.youtube.com/@dssolucionesacademicas" target="_blank" rel="me noopener" aria-label="YouTube de DS Soluciones Académicas"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M22.5 7.2c-.3-1.1-1.1-1.9-2.2-2.2C18.4 4.5 12 4.5 12 4.5s-6.4 0-8.3.5c-1.1.3-1.9 1.1-2.2 2.2C1 9.1 1 12 1 12s0 2.9.5 4.8c.3 1.1 1.1 1.9 2.2 2.2 1.9.5 8.3.5 8.3.5s6.4 0 8.3-.5c1.1-.3 1.9-1.1 2.2-2.2.5-1.9.5-4.8.5-4.8s0-2.9-.5-4.8ZM9.8 15.3V8.7L15.8 12l-6 3.3Z"/></svg></a></div></div><div><h3>Servicios</h3><a href="/#servicios">Tesis y titulación</a><a href="/#servicios">Maestrías</a><a href="/#servicios">Pregrado y bachillerato</a><a href="/#instituciones">Docentes e instituciones</a></div><div><h3>Información</h3><a href="/#proceso">Cómo trabajamos</a><a href="/#nosotros">Nuestra identidad</a><a href="/#preguntas">Preguntas frecuentes</a><a href="/herramientas/calculadora-muestra">Calculadora de muestra</a><a href="/blog/">Blog</a><a href="/recursos/">Recursos docentes</a></div><div><h3>Atención</h3><p>Loja, Ecuador</p><p>Atención digital en todo Ecuador</p><a href="${WA('Hola Diego, vengo del sitio web y quiero cotizar un servicio.')}" target="_blank" rel="noopener">+593 98 907 4861</a></div></div><div class="shell footer-bottom"><span>© ${new Date().getFullYear()} DS Soluciones Académicas</span><span>Claridad · Confidencialidad · Responsabilidad</span></div></footer>
   <a class="wa" href="${WA('Hola Diego, vengo del sitio web y quiero cotizar un servicio.')}" target="_blank" rel="noopener"><span>WA</span><b>Cotizar</b></a>
 <script>
 (()=>{const m=document.querySelector('#menu'),n=document.querySelector('#navLinks');
@@ -462,7 +463,8 @@ const ORG = {
   '@type': 'ProfessionalService', '@id': `${CONFIG.base}/#organizacion`,
   name: 'DS Soluciones Academicas', url: `${CONFIG.base}/`,
   telephone: `+${CONFIG.telefono}`,
-  address: { '@type': 'PostalAddress', addressLocality: 'Loja', addressRegion: 'Loja', addressCountry: 'EC' }
+  address: { '@type': 'PostalAddress', addressLocality: 'Loja', addressRegion: 'Loja', addressCountry: 'EC' },
+  sameAs: ['https://www.facebook.com/profile.php?id=61562524749570', 'https://www.tiktok.com/@dssolucionesacademicas', 'https://www.youtube.com/@dssolucionesacademicas']
 };
 const migasLD = items => ({
   '@type': 'BreadcrumbList',
@@ -719,8 +721,15 @@ ${toc.length > 2 ? `<nav class="toc" aria-label="Contenido del artículo"><b>En 
         image: `${CONFIG.base}/img/og-ds.jpg`,
         author: { '@id': `${CONFIG.base}/#diego` }, publisher: { '@id': `${CONFIG.base}/#organizacion` },
         isPartOf: { '@id': `${CONFIG.base}/blog/#seccion` } },
+      p.video ? {
+        '@type': 'VideoObject', '@id': `${CONFIG.base}/blog/${p.slug}.html#video`,
+        name: p.titulo, description: p.resumen,
+        thumbnailUrl: `https://i.ytimg.com/vi/${p.video}/${p.vertical ? 'oardefault' : 'maxresdefault'}.jpg`,
+        uploadDate: fechaISO(p.fecha), embedUrl: `https://www.youtube.com/embed/${p.video}`,
+        publisher: { '@id': `${CONFIG.base}/#organizacion` }
+      } : null,
       PERSONA, ORG, migasLD(migas)
-    ]
+    ].filter(Boolean)
   });
 }
 
@@ -768,11 +777,24 @@ ${relacionados(r, todos, 'recursos')}
 /*  Programa principal                                                 */
 /* ------------------------------------------------------------------ */
 
+/* La portada (sitio/index.html) es estática y lleva su propio <style>, pero
+   debe verse igual que el resto del sitio. En vez de mantener dos copias del
+   CSS a mano, esta función reescribe ese <style> con el contenido de
+   src/estilos.css en cada build, para que nunca se desincronicen. */
+async function sincronizarEstiloDeInicio(cssBase) {
+  const ruta = path.join(CONFIG.salida, 'index.html');
+  const html = await readFile(ruta, 'utf8');
+  const actualizado = html.replace(/(<style>)[\s\S]*?(<\/style>)/, `$1${cssBase}$2`);
+  if (actualizado !== html) await writeFile(ruta, actualizado);
+}
+
 async function main() {
   const t0 = Date.now();
   console.log('Generando el sitio de DS Soluciones Académicas\n');
 
-  CSS = (await readFile('src/estilos.css', 'utf8')) + CSS_EXTRA;
+  const CSS_BASE = await readFile('src/estilos.css', 'utf8');
+  CSS = CSS_BASE + CSS_EXTRA;
+  await sincronizarEstiloDeInicio(CSS_BASE);
 
   let filasBlog = [], filasRec = [];
   try { filasBlog = await leerPestana(CONFIG.pestanaBlog); }
